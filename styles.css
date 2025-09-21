@@ -1049,6 +1049,90 @@ body[dir="rtl"] .footer-logo i {
     margin-right: 0;
 }
 
+/* Custom Versions Section */
+.custom-versions {
+    padding: 100px 0;
+    background: #f8fafc;
+    text-align: center;
+}
+
+.custom-versions .section-header {
+    margin-bottom: 40px;
+}
+
+.versions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.version-item {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.version-item:hover {
+    transform: translateY(-5px);
+}
+
+.version-item i {
+    font-size: 40px;
+    color: #2563eb;
+    margin-bottom: 10px;
+}
+
+.version-item h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #1f2937;
+}
+
+.custom-request {
+    margin-top: 40px;
+}
+
+.custom-request p {
+    font-size: 1.1rem;
+    color: #6b7280;
+    margin-bottom: 20px;
+}
+
+.btn-whatsapp {
+    background: #25d366;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-right: 10px;
+}
+
+.btn-email {
+    background: #2563eb;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn-whatsapp:hover {
+    background: #1ebe57;
+}
+
+.btn-email:hover {
+    background: #1e40af;
+}
+
 /* Enhanced Responsive Design */
 @media (max-width: 1024px) {
     .hero-container {

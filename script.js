@@ -199,9 +199,14 @@ class LanguageManager {
     }
 
     bindEvents() {
-        document.querySelectorAll('.lang-btn').forEach(btn => {
+        console.log('Binding language buttons...'); // Log binding process
+        const buttons = document.querySelectorAll('.lang-btn');
+        console.log('Found buttons:', buttons); // Log the buttons found
+        
+        buttons.forEach(btn => {
             btn.addEventListener('click', (e) => {
                 const lang = e.target.dataset.lang;
+                console.log(`Button clicked: ${e.target.dataset.lang}`); // Log the button click event
                 this.updateLanguage(lang);
             });
         });
@@ -216,6 +221,8 @@ class LanguageManager {
             const key = element.dataset.i18n;
             if (translations[lang] && translations[lang][key]) {
                 element.textContent = translations[lang][key];
+            } else {
+                console.warn(`Missing translation for key: ${key} in language: ${lang}`);
             }
         });
 
@@ -237,6 +244,10 @@ class LanguageManager {
         document.querySelectorAll('.lang-btn').forEach(btn => {
             btn.classList.toggle('active', btn.dataset.lang === lang);
         });
+
+        console.log(`Language changed to: ${lang}`);
+        console.log('Updating language to:', lang); // Log the language being updated
+        console.log('Current translations:', translations[lang]); // Log the translations for the selected language
     }
 }
 
@@ -468,6 +479,9 @@ document.addEventListener('DOMContentLoaded', () => {
     new ThemeManager();
     new PerformanceMonitor();
 
+    // Force Arabic as the default language
+    document.querySelector('.lang-btn[data-lang="ar"]').click();
+    
     // Add loading state removal
     document.body.classList.remove('loading');
     
@@ -538,6 +552,3 @@ if ('serviceWorker' in navigator) {
             });
     });
 }
-
-// Export for potential module usage
-export { LanguageManager, NavigationManager, AnimationManager, ThemeManager, utils };
