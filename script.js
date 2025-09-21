@@ -38,6 +38,10 @@ const translations = {
         screenshot_customers: "Customers",
         screenshot_trips: "Trips",
         screenshot_reports: "Reports",
+        screenshot_dashboard_desc: "Main control panel overview",
+        screenshot_customers_desc: "Customer management system",
+        screenshot_trips_desc: "Transportation trip tracking",
+        screenshot_reports_desc: "Analytics and reporting tools",
         
         download_title: "Download AL-NAQLA",
         download_subtitle: "Get started with the most comprehensive transportation management solution",
@@ -50,6 +54,9 @@ const translations = {
         req_ram: "2GB RAM minimum",
         req_storage: "100MB free storage",
         req_internet: "Internet connection",
+        
+        app_preview: "App Preview",
+        video_not_supported: "Your browser doesn't support video playback",
         
         docs_title: "Documentation & Setup",
         docs_subtitle: "Everything you need to get started with AL-NAQLA",
@@ -123,6 +130,10 @@ const translations = {
         screenshot_customers: "العملاء",
         screenshot_trips: "الرحلات",
         screenshot_reports: "التقارير",
+        screenshot_dashboard_desc: "نظرة عامة على لوحة التحكم الرئيسية",
+        screenshot_customers_desc: "نظام إدارة العملاء",
+        screenshot_trips_desc: "تتبع رحلات النقل",
+        screenshot_reports_desc: "أدوات التحليل والتقارير",
         
         download_title: "تحميل النقلة",
         download_subtitle: "ابدأ مع الحل الأكثر شمولاً لإدارة النقل",
@@ -135,6 +146,9 @@ const translations = {
         req_ram: "2 جيجابايت رام كحد أدنى",
         req_storage: "100 ميجابايت مساحة فارغة",
         req_internet: "اتصال بالإنترنت",
+        
+        app_preview: "معاينة التطبيق",
+        video_not_supported: "متصفحك لا يدعم تشغيل الفيديو",
         
         docs_title: "الوثائق والإعداد",
         docs_subtitle: "كل ما تحتاجه للبدء مع النقلة",
