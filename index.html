@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AL-NAQLA - Transportation Management System</title>
+    <meta name="description" content="AL-NAQLA is a comprehensive Flutter-based transportation management system for iron and steel delivery operations">
+    <meta name="keywords" content="Flutter, Transportation, Management System, Iron Delivery, Steel Transport, Mobile App">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="AL-NAQLA - Transportation Management System">
+    <meta property="og:description" content="Comprehensive Flutter app for managing iron and steel transportation operations">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://hedra-nabil.github.io/tran_x_project/">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Cairo:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../assets/icons/truck.ico">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-truck"></i>
+                <span data-i18n="app_name">AL-NAQLA</span>
+            </div>
+            <div class="nav-menu">
+                <a href="#home" data-i18n="nav_home">Home</a>
+                <a href="#features" data-i18n="nav_features">Features</a>
+                <a href="#screenshots" data-i18n="nav_screenshots">Screenshots</a>
+                <a href="#download" data-i18n="nav_download">Download</a>
+                <a href="#documentation" data-i18n="nav_docs">Documentation</a>
+            </div>
+            <div class="nav-actions">
+                <div class="language-switch">
+                    <button class="lang-btn" data-lang="en">EN</button>
+                    <button class="lang-btn" data-lang="ar">العربية</button>
+                </div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title" data-i18n="hero_title">AL-NAQLA Transportation Management System</h1>
+                <p class="hero-subtitle" data-i18n="hero_subtitle">A comprehensive Flutter-based mobile application for managing iron and steel transportation operations efficiently.</p>
+                
+                <div class="hero-features">
+                    <div class="hero-feature">
+                        <i class="fas fa-mobile-alt"></i>
+                        <span data-i18n="hero_feature_1">Cross-Platform Mobile App</span>
+                    </div>
+                    <div class="hero-feature">
+                        <i class="fas fa-language"></i>
+                        <span data-i18n="hero_feature_2">Bilingual Support (Arabic/English)</span>
+                    </div>
+                    <div class="hero-feature">
+                        <i class="fas fa-cloud"></i>
+                        <span data-i18n="hero_feature_3">Cloud-Based Management</span>
+                    </div>
+                </div>
+
+                <div class="hero-actions">
+                    <a href="#download" class="btn btn-primary">
+                        <i class="fas fa-download"></i>
+                        <span data-i18n="download_now">Download Now</span>
+                    </a>
+                    <a href="#features" class="btn btn-secondary">
+                        <i class="fas fa-info-circle"></i>
+                        <span data-i18n="learn_more">Learn More</span>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="hero-visual">
+                <div class="phone-mockup">
+                    <div class="phone-frame">
+                        <div class="phone-screen">
+                            <i class="fas fa-truck hero-icon"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-i18n="features_title">Key Features</h2>
+                <p data-i18n="features_subtitle">Powerful tools designed specifically for transportation management</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 data-i18n="feature_customer_title">Customer Management</h3>
+                    <p data-i18n="feature_customer_desc">Comprehensive customer profiles with payment tracking, order history, and contact management.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-route"></i>
+                    </div>
+                    <h3 data-i18n="feature_trip_title">Trip Management</h3>
+                    <p data-i18n="feature_trip_desc">Track and manage all transportation trips with detailed pickup and delivery information.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3 data-i18n="feature_reports_title">Reporting & Analytics</h3>
+                    <p data-i18n="feature_reports_desc">Generate detailed reports and view analytics dashboard for business insights.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-bell"></i>
+                    </div>
+                    <h3 data-i18n="feature_notifications_title">Smart Notifications</h3>
+                    <p data-i18n="feature_notifications_desc">Real-time notifications for order updates, delivery status, and important alerts.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-cog"></i>
+                    </div>
+                    <h3 data-i18n="feature_settings_title">Flexible Settings</h3>
+                    <p data-i18n="feature_settings_desc">Customizable app settings, user preferences, and system configurations.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-sync-alt"></i>
+                    </div>
+                    <h3 data-i18n="feature_sync_title">Auto Updates</h3>
+                    <p data-i18n="feature_sync_desc">Automatic app updates and real-time data synchronization across all devices.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Screenshots Section -->
+    <section id="screenshots" class="screenshots">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-i18n="screenshots_title">App Screenshots</h2>
+                <p data-i18n="screenshots_subtitle">Take a look at the clean and intuitive interface</p>
+            </div>
+            
+            <div class="screenshots-gallery">
+                <div class="screenshot-item">
+                    <div class="screenshot-placeholder">
+                        <i class="fas fa-home"></i>
+                        <span data-i18n="screenshot_dashboard">Dashboard</span>
+                    </div>
+                </div>
+                <div class="screenshot-item">
+                    <div class="screenshot-placeholder">
+                        <i class="fas fa-user-circle"></i>
+                        <span data-i18n="screenshot_customers">Customers</span>
+                    </div>
+                </div>
+                <div class="screenshot-item">
+                    <div class="screenshot-placeholder">
+                        <i class="fas fa-truck"></i>
+                        <span data-i18n="screenshot_trips">Trips</span>
+                    </div>
+                </div>
+                <div class="screenshot-item">
+                    <div class="screenshot-placeholder">
+                        <i class="fas fa-chart-line"></i>
+                        <span data-i18n="screenshot_reports">Reports</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="download">
+        <div class="container">
+            <div class="download-content">
+                <h2 data-i18n="download_title">Download AL-NAQLA</h2>
+                <p data-i18n="download_subtitle">Get started with the most comprehensive transportation management solution</p>
+                
+                <div class="download-options">
+                    <a href="https://github.com/Hedra-Nabil/tran_x_project/releases" class="download-btn android" target="_blank">
+                        <div class="download-icon">
+                            <i class="fab fa-android"></i>
+                        </div>
+                        <div class="download-text">
+                            <span class="download-label" data-i18n="download_android">Download for Android</span>
+                            <span class="download-version">APK v1.2.2</span>
+                        </div>
+                    </a>
+                    
+                    <a href="https://github.com/Hedra-Nabil/tran_x_project" class="download-btn github" target="_blank">
+                        <div class="download-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <div class="download-text">
+                            <span class="download-label" data-i18n="download_source">View Source Code</span>
+                            <span class="download-version" data-i18n="github_repo">GitHub Repository</span>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="system-requirements">
+                    <h3 data-i18n="requirements_title">System Requirements</h3>
+                    <div class="requirements-grid">
+                        <div class="requirement-item">
+                            <i class="fab fa-android"></i>
+                            <span data-i18n="req_android">Android 5.0+ (API 21)</span>
+                        </div>
+                        <div class="requirement-item">
+                            <i class="fas fa-memory"></i>
+                            <span data-i18n="req_ram">2GB RAM minimum</span>
+                        </div>
+                        <div class="requirement-item">
+                            <i class="fas fa-hdd"></i>
+                            <span data-i18n="req_storage">100MB free storage</span>
+                        </div>
+                        <div class="requirement-item">
+                            <i class="fas fa-wifi"></i>
+                            <span data-i18n="req_internet">Internet connection</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Documentation Section -->
+    <section id="documentation" class="documentation">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-i18n="docs_title">Documentation & Setup</h2>
+                <p data-i18n="docs_subtitle">Everything you need to get started with AL-NAQLA</p>
+            </div>
+            
+            <div class="docs-grid">
+                <div class="doc-card">
+                    <div class="doc-icon">
+                        <i class="fas fa-play-circle"></i>
+                    </div>
+                    <h3 data-i18n="doc_quickstart_title">Quick Start Guide</h3>
+                    <p data-i18n="doc_quickstart_desc">Get up and running with AL-NAQLA in minutes</p>
+                    <a href="#quick-start" class="doc-link" data-i18n="read_more">Read More</a>
+                </div>
+                
+                <div class="doc-card">
+                    <div class="doc-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 data-i18n="doc_development_title">Development Setup</h3>
+                    <p data-i18n="doc_development_desc">Set up your development environment</p>
+                    <a href="#development" class="doc-link" data-i18n="read_more">Read More</a>
+                </div>
+                
+                <div class="doc-card">
+                    <div class="doc-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3 data-i18n="doc_api_title">API Reference</h3>
+                    <p data-i18n="doc_api_desc">Comprehensive API documentation</p>
+                    <a href="#api" class="doc-link" data-i18n="read_more">Read More</a>
+                </div>
+            </div>
+            
+            <!-- Quick Start Guide -->
+            <div id="quick-start" class="doc-section">
+                <h3 data-i18n="quickstart_title">🚀 Quick Start Guide</h3>
+                <div class="doc-content">
+                    <ol class="doc-steps">
+                        <li data-i18n="step_1">Download the latest APK from the releases page</li>
+                        <li data-i18n="step_2">Enable "Install from Unknown Sources" in your Android settings</li>
+                        <li data-i18n="step_3">Install the APK file on your Android device</li>
+                        <li data-i18n="step_4">Launch AL-NAQLA and create your account</li>
+                        <li data-i18n="step_5">Start managing your transportation operations!</li>
+                    </ol>
+                </div>
+            </div>
+            
+            <!-- Development Setup -->
+            <div id="development" class="doc-section">
+                <h3 data-i18n="dev_setup_title">🛠️ Development Setup</h3>
+                <div class="doc-content">
+                    <h4 data-i18n="prerequisites_title">Prerequisites</h4>
+                    <ul class="doc-list">
+                        <li data-i18n="prereq_flutter">Flutter SDK (3.8.1 or higher)</li>
+                        <li data-i18n="prereq_dart">Dart SDK</li>
+                        <li data-i18n="prereq_android">Android Studio with Android SDK</li>
+                        <li data-i18n="prereq_firebase">Firebase project setup</li>
+                        <li data-i18n="prereq_supabase">Supabase project configuration</li>
+                    </ul>
+                    
+                    <h4 data-i18n="installation_title">Installation</h4>
+                    <div class="code-block">
+                        <code>
+git clone https://github.com/Hedra-Nabil/tran_x_project.git<br>
+cd tran_x_project<br>
+flutter pub get<br>
+flutter run
+                        </code>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Technology Stack -->
+            <div id="api" class="doc-section">
+                <h3 data-i18n="tech_stack_title">🔧 Technology Stack</h3>
+                <div class="tech-grid">
+                    <div class="tech-item">
+                        <i class="fab fa-flutter" style="color: #02569B;"></i>
+                        <span>Flutter</span>
+                    </div>
+                    <div class="tech-item">
+                        <i class="fas fa-fire" style="color: #FF6F00;"></i>
+                        <span>Firebase</span>
+                    </div>
+                    <div class="tech-item">
+                        <i class="fas fa-database" style="color: #3ECF8E;"></i>
+                        <span>Supabase</span>
+                    </div>
+                    <div class="tech-item">
+                        <i class="fas fa-cube" style="color: #02D9F7;"></i>
+                        <span>Flutter Bloc</span>
+                    </div>
+                    <div class="tech-item">
+                        <i class="fas fa-bell" style="color: #E91E63;"></i>
+                        <span>OneSignal</span>
+                    </div>
+                    <div class="tech-item">
+                        <i class="fas fa-language" style="color: #9C27B0;"></i>
+                        <span>Easy Localization</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <div class="footer-logo">
+                        <i class="fas fa-truck"></i>
+                        <span>AL-NAQLA</span>
+                    </div>
+                    <p data-i18n="footer_desc">Transportation Management System for efficient iron and steel delivery operations.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4 data-i18n="footer_product">Product</h4>
+                        <a href="#features" data-i18n="nav_features">Features</a>
+                        <a href="#screenshots" data-i18n="nav_screenshots">Screenshots</a>
+                        <a href="#download" data-i18n="nav_download">Download</a>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h4 data-i18n="footer_resources">Resources</h4>
+                        <a href="#documentation" data-i18n="nav_docs">Documentation</a>
+                        <a href="https://github.com/Hedra-Nabil/tran_x_project" target="_blank" data-i18n="github_repo">GitHub</a>
+                        <a href="https://github.com/Hedra-Nabil/tran_x_project/issues" target="_blank" data-i18n="footer_support">Support</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p data-i18n="footer_copyright">© 2024 AL-NAQLA. All rights reserved. Built with Flutter.</p>
+                <div class="footer-social">
+                    <a href="https://github.com/Hedra-Nabil" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
