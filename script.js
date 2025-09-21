@@ -517,6 +517,13 @@ function initializeInteractiveFeatures() {
             }
         }
     });
+
+    // Ensure language buttons have proper data-lang attributes
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+        if (!btn.dataset.lang) {
+            console.error('Language button missing data-lang attribute:', btn);
+        }
+    });
 }
 
 // Service Worker registration (for PWA features in the future)
