@@ -656,10 +656,13 @@ body[dir="rtl"] {
 }
 
 .download-options {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
     margin-bottom: 60px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .download-btn {
@@ -683,6 +686,14 @@ body[dir="rtl"] {
 
 .download-btn.android .download-icon {
     color: #3ddc84;
+}
+
+.download-btn.ios .download-icon {
+    color: #A3AAAE;
+}
+
+.download-btn.windows .download-icon {
+    color: #00A4EF;
 }
 
 .download-btn.github .download-icon {
@@ -716,14 +727,40 @@ body[dir="rtl"] {
 
 .system-requirements h3 {
     font-size: 1.5rem;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     color: white;
+    text-align: center;
+}
+
+.platform-requirements {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    padding: 25px;
+    margin-bottom: 25px;
+}
+
+.platform-requirements h4 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: white;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.platform-requirements h4::before {
+    content: '';
+    width: 4px;
+    height: 20px;
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    border-radius: 2px;
 }
 
 .requirements-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
+    gap: 15px;
 }
 
 .requirement-item {
@@ -743,7 +780,22 @@ body[dir="rtl"] {
 /* Documentation Section */
 .documentation {
     padding: 100px 0;
-    background: #f9fafb;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+.documentation .section-header h2 {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.documentation .section-header p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.125rem;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 .docs-grid {
@@ -754,7 +806,9 @@ body[dir="rtl"] {
 }
 
 .doc-card {
-    background: white;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
     padding: 30px;
     border-radius: 15px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
@@ -763,12 +817,13 @@ body[dir="rtl"] {
 
 .doc-card:hover {
     transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.15);
 }
 
 .doc-icon {
     width: 60px;
     height: 60px;
-    background: linear-gradient(135deg, #667eea, #764ba2);
+    background: rgba(255, 255, 255, 0.2);
     border-radius: 15px;
     display: flex;
     align-items: center;
@@ -785,27 +840,29 @@ body[dir="rtl"] {
     font-size: 1.25rem;
     font-weight: 600;
     margin-bottom: 10px;
-    color: #1f2937;
+    color: white;
 }
 
 .doc-card p {
-    color: #6b7280;
+    color: rgba(255, 255, 255, 0.8);
     margin-bottom: 20px;
 }
 
 .doc-link {
-    color: #2563eb;
+    color: #fbbf24;
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s ease;
 }
 
 .doc-link:hover {
-    color: #1d4ed8;
+    color: #f59e0b;
 }
 
 .doc-section {
-    background: white;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     padding: 40px;
     border-radius: 15px;
     margin-bottom: 30px;
@@ -816,14 +873,19 @@ body[dir="rtl"] {
     font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 25px;
-    color: #1f2937;
+    color: white;
 }
 
 .doc-content h4 {
     font-size: 1.125rem;
     font-weight: 600;
     margin-bottom: 15px;
-    color: #374151;
+    color: white;
+}
+
+.doc-content p {
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.6;
 }
 
 .doc-steps {
@@ -838,6 +900,7 @@ body[dir="rtl"] {
     padding-left: 40px;
     margin-bottom: 15px;
     line-height: 1.6;
+    color: rgba(255, 255, 255, 0.9);
 }
 
 .doc-steps li::before {
@@ -847,7 +910,7 @@ body[dir="rtl"] {
     top: 0;
     width: 24px;
     height: 24px;
-    background: #2563eb;
+    background: linear-gradient(45deg, #667eea, #764ba2);
     color: white;
     border-radius: 50%;
     display: flex;
@@ -864,6 +927,14 @@ body[dir="rtl"] {
 
 .doc-list li {
     position: relative;
+    padding-left: 30px;
+    margin-bottom: 10px;
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.6;
+}
+
+.doc-list li {
+    position: relative;
     padding-left: 25px;
     margin-bottom: 10px;
 }
@@ -872,7 +943,7 @@ body[dir="rtl"] {
     content: '✓';
     position: absolute;
     left: 0;
-    color: #10b981;
+    color: #34d399;
     font-weight: bold;
 }
 
@@ -897,7 +968,9 @@ body[dir="rtl"] {
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    background: white;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -906,6 +979,7 @@ body[dir="rtl"] {
 
 .tech-item:hover {
     transform: translateY(-3px);
+    background: rgba(255, 255, 255, 0.15);
 }
 
 .tech-item i {
@@ -914,7 +988,7 @@ body[dir="rtl"] {
 
 .tech-item span {
     font-weight: 500;
-    color: #374151;
+    color: white;
 }
 
 /* Footer */
@@ -1237,6 +1311,15 @@ body[dir="rtl"] .footer-logo i {
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
     }
+
+    .platform-requirements {
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    .platform-requirements h4 {
+        font-size: 1.1rem;
+    }
     
     .docs-grid {
         grid-template-columns: 1fr;
@@ -1279,6 +1362,19 @@ body[dir="rtl"] .footer-logo i {
     .phone-notch {
         width: 100px;
         height: 20px;
+    }
+
+    .requirements-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .platform-requirements {
+        padding: 15px;
+    }
+
+    .platform-requirements h4 {
+        font-size: 1rem;
     }
     
     .status-bar {
@@ -1375,6 +1471,264 @@ body[dir="rtl"] .footer-logo i {
 /* Dark mode support preparation */
 @media (prefers-color-scheme: dark) {
     /* Future dark mode implementation can go here */
+}
+
+/* Quick Start Guide Enhanced Styles */
+.quickstart-intro {
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 30px;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.platform-selector {
+    margin-bottom: 40px;
+}
+
+.platform-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.platform-tab {
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid transparent;
+    border-radius: 12px;
+    padding: 15px 25px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 500;
+    min-width: 120px;
+    justify-content: center;
+}
+
+.platform-tab:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateY(-2px);
+}
+
+.platform-tab.active {
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    border-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+}
+
+.platform-tab i {
+    font-size: 1.2rem;
+}
+
+.platform-content {
+    display: none;
+}
+
+.platform-content.active {
+    display: block;
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.setup-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.setup-header h4 {
+    font-size: 1.8rem;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.setup-header p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.1rem;
+}
+
+.doc-steps.enhanced {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.step-item {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    padding: 25px;
+    border-left: 4px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.step-item:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-left-color: #667eea;
+}
+
+.step-number {
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    color: white;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    flex-shrink: 0;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+}
+
+.step-content h5 {
+    color: white;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.step-content p {
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.step-note {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 15px;
+    background: rgba(102, 126, 234, 0.2);
+    border-radius: 8px;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.9rem;
+}
+
+.step-note.warning {
+    background: rgba(255, 193, 7, 0.2);
+    color: #ffc107;
+}
+
+.step-note i {
+    font-size: 1rem;
+}
+
+.quick-tips {
+    margin-top: 50px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+}
+
+.quick-tips h4 {
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+    font-size: 1.5rem;
+}
+
+.tips-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.tip-item {
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.tip-item:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+}
+
+.tip-item i {
+    font-size: 1.5rem;
+    color: #667eea;
+    margin-top: 5px;
+}
+
+.tip-item h5 {
+    color: white;
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+}
+
+.tip-item p {
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* Responsive Design for Quick Start Guide */
+@media (max-width: 768px) {
+    .platform-tabs {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .platform-tab {
+        width: 100%;
+        max-width: 200px;
+    }
+    
+    .step-item {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+    
+    .step-number {
+        align-self: flex-start;
+        width: 40px;
+        height: 40px;
+        font-size: 1.1rem;
+    }
+    
+    .tips-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .quickstart-intro {
+        font-size: 1rem;
+    }
+    
+    .setup-header h4 {
+        font-size: 1.5rem;
+    }
+    
+    .step-content h5 {
+        font-size: 1.1rem;
+    }
+    
+    .step-item {
+        padding: 15px;
+    }
+    
+    .quick-tips {
+        padding: 20px;
+    }
 }
 
 /* Loading States */
