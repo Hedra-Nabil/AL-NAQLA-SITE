@@ -90,7 +90,7 @@ const translations = {
         footer_product: "Product",
         footer_resources: "Resources",
         footer_support: "Support",
-        footer_copyright: "© 2024 AL-NAQLA. All rights reserved. Built with Flutter."
+        footer_copyright: "© 2025 AL-NAQLA. All rights reserved. Built with Flutter."
     },
     ar: {
         app_name: "النقلة",
@@ -182,7 +182,7 @@ const translations = {
         footer_product: "المنتج",
         footer_resources: "الموارد",
         footer_support: "الدعم",
-        footer_copyright: "© 2024 النقلة. جميع الحقوق محفوظة. مبني بـ Flutter."
+        footer_copyright: "© 2025 النقلة. جميع الحقوق محفوظة. مبني بـ Flutter."
     }
 };
 
