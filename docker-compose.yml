@@ -1,0 +1,32 @@
+# AL-NAQLA Frontend - Docker Compose Configuration
+# This connects to the existing backend network
+# 
+# Usage:
+# 1. First start the backend: cd backend && docker-compose up -d
+# 2. Then start the frontend: docker-compose up -d
+
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: al_naqla_frontend:latest
+    container_name: alnaqla_frontend
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      # API URL - uses Docker network to connect to backend
+      - NEXT_PUBLIC_API_URL=http://alnaqla_app:8000/api/v1
+      - NODE_ENV=production
+    networks:
+      - backend_alnaqla
+    depends_on: []
+    # Note: depends_on doesn't work across docker-compose files
+    # Make sure backend is running before starting frontend
+
+networks:
+  # Connect to the existing backend network
+  backend_alnaqla:
+    external: true
+    name: backend_alnaqla

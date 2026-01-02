@@ -1,0 +1,161 @@
+export const translations = {
+    en: {
+        app_name: 'AL-NAQLA',
+        nav_home: 'Home',
+        nav_about: 'About',
+        nav_features: 'Features',
+        nav_screenshots: 'Screenshots',
+        nav_download: 'Download',
+        nav_docs: 'Documentation',
+        nav_login: 'Login',
+        nav_dashboard: 'Dashboard',
+
+        hero_title: 'AL-NAQLA Transportation Management System',
+        hero_subtitle: 'A comprehensive multi-platform solution with mobile app, desktop dashboard, Excel integration and printing capabilities for managing iron and steel transportation operations efficiently.',
+        hero_feature_1: 'Multi-Platform Support (Mobile, Desktop, Tablet)',
+        hero_feature_2: 'Dashboard + Excel Integration + Printing',
+        hero_feature_3: 'Cloud-Based Management',
+        download_now: 'Download Now',
+        learn_more: 'Learn More',
+
+        about_title: 'About AL-NAQLA',
+        about_subtitle: 'Comprehensive multi-platform transportation management system',
+        about_vision_title: 'Our Vision',
+        about_vision_desc: 'Developing innovative technical solutions to improve transportation and delivery efficiency in the Middle East',
+        about_mission_title: 'Our Mission',
+        about_mission_desc: 'Providing an integrated multi-platform system with mobile app, desktop dashboard, Excel integration and printing support for managing iron and steel transport operations accurately and effectively',
+        about_team_title: 'Our Team',
+        about_team_desc: 'Professional developers specialized in Flutter applications and smart business solutions',
+
+        what_we_offer: 'What We Offer',
+        mobile_app_title: 'Mobile Application',
+        mobile_app_desc: 'Complete mobile app for Android with comprehensive transportation management features',
+        desktop_dashboard_title: 'Desktop Dashboard',
+        desktop_dashboard_desc: 'Advanced Windows desktop application with powerful analytics and management tools',
+        excel_integration_title: 'Excel Integration',
+        excel_integration_desc: 'Full Excel integration for data import/export, automated reporting and seamless workflows',
+        printing_support_title: 'Professional Printing',
+        printing_support_desc: 'High-quality printing support for invoices, reports, delivery receipts and documentation',
+        cloud_sync_title: 'Cloud Synchronization',
+        cloud_sync_desc: 'Real-time cloud sync across all devices ensuring data consistency and accessibility',
+        multi_platform_title: 'Multi-Platform Support',
+        multi_platform_desc: 'Available on Mobile, Desktop, Tablet with consistent experience across all platforms',
+
+        stat_downloads: '500+',
+        stat_downloads_label: 'Downloads',
+        stat_users: '100+',
+        stat_users_label: 'Active Users',
+        stat_rating: '4.8',
+        stat_rating_label: 'User Rating',
+        stat_support: '24/7',
+        stat_support_label: 'Technical Support',
+
+        screenshots_title: 'App Screenshots',
+        screenshots_subtitle: 'Take a look at the clean and intuitive interface',
+        screenshot_dashboard: 'Dashboard',
+        screenshot_dashboard_desc: 'Main control panel overview',
+        screenshot_customers: 'Customers',
+        screenshot_customers_desc: 'Customer management system',
+        screenshot_trips: 'Trips',
+        screenshot_trips_desc: 'Transportation trip tracking',
+        screenshot_reports: 'Reports',
+        screenshot_reports_desc: 'Analytics and reporting tools',
+
+        download_title: 'Download AL-NAQLA',
+        download_subtitle: 'Get started with the most comprehensive multi-platform transportation management solution',
+        download_android: 'Download for Android',
+        download_ios: 'Download for iPhone/iPad',
+        download_windows: 'Download for Windows',
+
+        docs_title: 'Documentation & Setup',
+        docs_subtitle: 'Everything you need to get started with AL-NAQLA',
+
+        footer_desc: 'Transportation Management System for efficient iron and steel delivery operations.',
+        footer_copyright: '© 2025 AL-NAQLA. All rights reserved. Built with Flutter.',
+    },
+    ar: {
+        app_name: 'النقلة',
+        nav_home: 'الرئيسية',
+        nav_about: 'حولنا',
+        nav_features: 'المزايا',
+        nav_screenshots: 'لقطات الشاشة',
+        nav_download: 'تحميل',
+        nav_docs: 'التوثيق',
+        nav_login: 'تسجيل الدخول',
+        nav_dashboard: 'لوحة التحكم',
+
+        hero_title: 'نظام النقلة لإدارة النقل',
+        hero_subtitle: 'حل شامل متعدد المنصات يضم تطبيق موبايل، داش بورد سطح المكتب، تكامل مع إكسل وإمكانيات طباعة لإدارة عمليات نقل الحديد والصلب بكفاءة عالية.',
+        hero_feature_1: 'دعم متعدد المنصات (موبايل، سطح المكتب، تابلت)',
+        hero_feature_2: 'داش بورد + تكامل إكسل + طباعة',
+        hero_feature_3: 'إدارة سحابية',
+        download_now: 'تحميل الآن',
+        learn_more: 'اعرف المزيد',
+
+        about_title: 'حول AL-NAQLA',
+        about_subtitle: 'نظام شامل متعدد المنصات لإدارة النقل والتوصيل',
+        about_vision_title: 'رؤيتنا',
+        about_vision_desc: 'تطوير حلول تقنية مبتكرة تساعد في تحسين كفاءة عمليات النقل والتوصيل في الشرق الأوسط',
+        about_mission_title: 'مهمتنا',
+        about_mission_desc: 'توفير نظام متكامل متعدد المنصات يضم تطبيق موبايل، داش بورد سطح المكتب، تكامل مع إكسل ودعم الطباعة لإدارة عمليات نقل الحديد والصلب بدقة وفعالية',
+        about_team_title: 'فريقنا',
+        about_team_desc: 'مطورون محترفون متخصصون في تطبيقات Flutter وحلول الأعمال الذكية',
+
+        what_we_offer: 'ما نقدمه',
+        mobile_app_title: 'تطبيق الموبايل',
+        mobile_app_desc: 'تطبيق موبايل كامل لأندرويد مع جميع ميزات إدارة النقل الشاملة',
+        desktop_dashboard_title: 'داش بورد سطح المكتب',
+        desktop_dashboard_desc: 'تطبيق متقدم لسطح المكتب (ويندوز) مع أدوات تحليل وإدارة قوية',
+        excel_integration_title: 'تكامل مع إكسل',
+        excel_integration_desc: 'تكامل كامل مع إكسل لاستيراد/تصدير البيانات، تقارير تلقائية وسير عمل سلس',
+        printing_support_title: 'دعم طباعة احترافي',
+        printing_support_desc: 'دعم طباعة عالي الجودة للفواتير، التقارير، إيصالات التوصيل والوثائق',
+        cloud_sync_title: 'مزامنة سحابية',
+        cloud_sync_desc: 'مزامنة سحابية فورية عبر جميع الأجهزة لضمان تطابق البيانات وسهولة الوصول',
+        multi_platform_title: 'دعم متعدد المنصات',
+        multi_platform_desc: 'متاح على الموبايل وسطح المكتب والتابلت مع تجربة متسقة عبر جميع المنصات',
+
+        stat_downloads: '+500',
+        stat_downloads_label: 'تحميل',
+        stat_users: '+100',
+        stat_users_label: 'مستخدم نشط',
+        stat_rating: '4.8',
+        stat_rating_label: 'تقييم المستخدمين',
+        stat_support: '24/7',
+        stat_support_label: 'دعم فني',
+
+        screenshots_title: 'لقطات شاشة التطبيق',
+        screenshots_subtitle: 'ألق نظرة على الواجهة النظيفة والبديهية',
+        screenshot_dashboard: 'لوحة القيادة',
+        screenshot_dashboard_desc: 'نظرة عامة على لوحة التحكم الرئيسية',
+        screenshot_customers: 'العملاء',
+        screenshot_customers_desc: 'نظام إدارة العملاء',
+        screenshot_trips: 'الرحلات',
+        screenshot_trips_desc: 'تتبع رحلات النقل',
+        screenshot_reports: 'التقارير',
+        screenshot_reports_desc: 'أدوات التحليلات والتقارير',
+
+        download_title: 'تحميل AL-NAQLA',
+        download_subtitle: 'ابدأ مع الحل الأكثر شمولية متعدد المنصات لإدارة النقل',
+        download_android: 'تحميل لنظام Android',
+        download_ios: 'تحميل للايفون/الايباد',
+        download_windows: 'تحميل للويندوز',
+
+        docs_title: 'التوثيق والإعداد',
+        docs_subtitle: 'كل ما تحتاجه للبدء مع AL-NAQLA',
+
+        footer_desc: 'نظام إدارة النقل لعمليات توصيل الحديد والصلب بكفاءة.',
+        footer_copyright: '© 2025 AL-NAQLA. جميع الحقوق محفوظة. مبني بـ Flutter.',
+    },
+} as const;
+
+export type Language = keyof typeof translations;
+export type TranslationKey = keyof (typeof translations)['en'];
+
+export function getTranslation(lang: Language, key: TranslationKey): string {
+    return translations[lang][key] || translations['en'][key] || key;
+}
+
+export function t(lang: Language) {
+    return (key: TranslationKey) => getTranslation(lang, key);
+}
